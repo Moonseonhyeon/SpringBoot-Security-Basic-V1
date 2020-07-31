@@ -11,3 +11,8 @@ spring:  datasource:    driver-class-name: com.mysql.cj.jdbc.Driver
     password: cos1234
       mvc:    view:      prefix: /templates/
       suffix: .mustache
+        jpa:    hibernate:      ddl-auto: update #create update non
+      naming:        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl #파스칼 표기법으로설정
+    show-sql: true #sql문 보기
+      
+      

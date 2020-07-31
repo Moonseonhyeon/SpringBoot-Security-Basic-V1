@@ -16,3 +16,12 @@ Spring Data JPA
 MySQL Driver
 
 ```
+
+###
+
+```maven mustache tamplate
+<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-mustache</artifactId>
+</dependency>
+```

@@ -14,7 +14,7 @@ import lombok.Data;
 //ORM - Object Relation Mapping
 
 @Data
-@Entity
+@Entity // Jpa가 스캔하다가 이 어노테이션을 찾으면 연결된 데이터베이스에 이 모델을 보고 테이블을 만들어줌.
 public class User {
 	@Id //primary key
 	@GeneratedValue(strategy = GenerationType.IDENTITY) //numbering 전략 - primary key에 auto increament

@@ -1,8 +1,11 @@
 package com.cos.securityex01.config.auth;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import com.cos.securityex01.model.User;
@@ -54,7 +57,12 @@ public class PrincipalDetails implements UserDetails{
 	
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		return null; //권한뭐야?//이부분 완성하는 거 숙제
+		//이부분 완성하는 거 숙제
+		List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
+		authorities.add( () -> ("ROLE_USER"));
+		
+		return authorities; //권한뭐야?
 	}
+	
 
 }

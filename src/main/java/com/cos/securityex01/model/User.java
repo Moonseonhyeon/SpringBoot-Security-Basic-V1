@@ -22,6 +22,7 @@ public class User {
 	private String username;
 	private String password;
 	private String email;
+	private String role; //회원가입할 때는 user권한 //ROLE_USER, ROLE_ADMIN
 	@CreationTimestamp//나중에는 localdate
 	private Timestamp createDate;
 

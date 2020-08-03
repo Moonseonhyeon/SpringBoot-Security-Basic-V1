@@ -49,3 +49,11 @@ Spring Web
 		<artifactId>spring-boot-starter-mustache</artifactId>
 </dependency>
 ```
+
+```
+WebMvcConfig.java 이상해서 여기다가 넣어둠
+resolver.setCharset("UTF-8");
+		resolver.setContentType("text/html;charset=UTF-8");
+		resolver.setPrefix("classpath:/templates/");
+		resolver.setSuffix(".html");
+```

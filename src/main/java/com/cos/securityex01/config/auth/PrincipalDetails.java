@@ -59,7 +59,7 @@ public class PrincipalDetails implements UserDetails{
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		//이부분 완성하는 거 숙제
 		List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
-		authorities.add( () -> ("ROLE_USER"));
+		authorities.add( () -> (user.getRole()));
 		
 		return authorities; //권한뭐야?
 	}
